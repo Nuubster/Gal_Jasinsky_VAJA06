@@ -22,6 +22,22 @@ namespace vaja6 {
             stIg++;
         }
 
+		public Igralec(Igralec one)
+        {
+            u_ime = one.U_ime;
+            u_geslo = one.U_geslo;
+            id = stIg;
+            stIg++;
+        }
+
+        public Igralec(string name, string pass)
+        {
+            u_ime = name;
+            u_geslo = pass;
+            id = stIg;
+            stIg++;
+        }
+
 		// Bralna lastnost, ki dovoli branje privatne spremenljivke id
         public int Id {
             get
