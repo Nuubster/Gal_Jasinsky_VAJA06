@@ -14,6 +14,7 @@ namespace vaja6 {
         public string u_geslo;
         public static int stIg = 1;
 
+		// Privzeti konstruktor
         public Igralec() {
             u_ime = "";
             u_geslo = "";
@@ -21,6 +22,7 @@ namespace vaja6 {
             stIg++;
         }
 
+		// Bralna lastnost, ki dovoli branje privatne spremenljivke id
         public int Id {
             get
             {
@@ -28,7 +30,9 @@ namespace vaja6 {
             }
         }
 
-        public string U_ime {
+		// Bralno-Pisalna lastnost, ki dovoli branje in spreminjanje privatne spremenljivke ime
+        public string U_ime 
+		{
             get
             {
                 return u_ime;
@@ -39,6 +43,7 @@ namespace vaja6 {
             }
         }
 
+		// Bralno-Pisalna lastnost, ki dovoli branje in spreminjanje privatne spremenljivke geslo
         public string U_geslo
         {
             get
@@ -51,6 +56,7 @@ namespace vaja6 {
             }
         }
 
+		// Bralna lastnost, ki dovoli branje privatne spremenljivke stIg
         public static int StIg
         {
             get { return stIg; }
